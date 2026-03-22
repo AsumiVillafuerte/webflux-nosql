@@ -1,0 +1,21 @@
+server:
+  port: 8082
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://asumipenafielvillafuerte_db_user:q5zMqKKAQ9risvig@cluster0.1emwmg6.mongodb.net/29_Asumi_Villafuerte?retryWrites=true&w=majority&appName=Cluster0
+      database: 29_Asumi_Villafuerte
+
+logging:
+  level:
+    org.mongodb.driver: ERROR
+    org.springframework: WARN
+
+springdoc:
+  api-docs:
+    enabled: true
+    path: /api-docs
+  swagger-ui:
+    enabled: true
+    path: /swagger-ui.html
